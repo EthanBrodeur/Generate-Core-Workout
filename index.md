@@ -64,7 +64,7 @@
         }
         for (var i = 0; i < number; i ++){
             let index = Math.floor(Math.random()*EXERCISES.length);
-            document.getElementById("workoutlist").innerHTML = document.getElementById("workoutlist").innerHTML + EXERCISES.splice(index, 1)[0] + "\n";
+            document.getElementById("workoutList").innerHTML = document.getElementById("workoutlist").innerHTML + EXERCISES.splice(index, 1)[0] + "\n";
         }
 
     }
