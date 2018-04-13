@@ -13,7 +13,7 @@
     function getWorkout(){
         let number = document.getElementById("numEx").value;
         document.getElementById("topworkoutlabel").innerHTML = "You've selected " + number + " exercises:";
-        
+        document.getElementById("workoutList").innerHTML = "";
         let EXERCISES = ["Elbow Plank",
         "Elbow Side Plank",
         "High Plank",
@@ -62,31 +62,10 @@
         if (number > EXERCISES.length) {
             number = EXERCISES.length;
         }
-        for (var i = 0; i < number; i ++){
+        for (var i = 1; i < number+1; i ++){
             let index = Math.floor(Math.random()*EXERCISES.length);
-            document.getElementById("workoutList").innerHTML = document.getElementById("workoutList").innerHTML + EXERCISES.splice(index, 1)[0] + "\n";
+            document.getElementById("workoutList").innerHTML = document.getElementById("workoutList").innerHTML + i + ". " + EXERCISES.splice(index, 1)[0];
         }
 
     }
 </script>
-
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
