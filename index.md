@@ -10,8 +10,8 @@
 
 <script>
     function getWorkout(){
-        let number = document.getElementById("numEx");
-        document.getElementById("returntxt").value = number
+        let number = document.getElementById("numEx").value;
+        document.getElementById("returntxt").innerHTML = number
         alert(number) 
     }
 </script>
