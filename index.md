@@ -6,13 +6,67 @@
 </form>
 <button onclick="getWorkout()">Get My Workout</button>
 
-<p id="returntxt"></p>
+<p id="topworkoutlabel"></p>
+<div id="workoutList"></div>
 
 <script>
     function getWorkout(){
         let number = document.getElementById("numEx").value;
-        document.getElementById("returntxt").innerHTML = number
-        alert(number) 
+        document.getElementById("topworkoutlabel").innerHTML = "You've selected " + number + " exercises:";
+        
+        let EXERCISES = ["Elbow Plank",
+        "Elbow Side Plank",
+        "High Plank",
+        "High Side Plank",
+        "Back Plank",
+        "High Plank with Arm Extensions",
+        "Elbow Plank with Arm Extensions",
+        "High Plank with Opposite Arm/Leg Extensions",
+        "Elbow Plan with Opposite Arm/Leg Extensions",
+        "Elbow Side Plank with Knee Drives",
+        "High Side Plank with Knee Drives",
+        "Elbow Side Plank with Top Leg Lifts",
+        "High Side Plank with Top Leg Lifts",
+        "Elbow Side Plank with Internal Rotation",
+        "High Side Plank with Internal Rotation",
+        "Pushups",
+        "Wide Pushups",
+        "Triangle Pushups",
+        "Spiderman Pushups",
+        "V Ups",
+        "Russian Twists",
+        "Toe Taps (Penguin Slides)",
+        "Boats",
+        "Accordions",
+        "Supermans",
+        "Leg Lifts",
+        "Flutters",
+        "Scissors",
+        "Opposite Elbow to Knee Hold, other leg extended",
+        "Mountain Climbers",
+        "Swiss Ball Pikes",
+        "Swiss Ball Side Tucks",
+        "Swiss Ball Single Leg Drives",
+        "Swiss Ball Stir the Pot",
+        "Swiss Ball Glute Bridge Leg Extensions (shoulders on ball)",
+        "Swiss Ball Hip Extensions",
+        "Swiss Ball Rollouts",
+        "Medicine Ball Pushups",
+        "Fire Hydrants",
+        "Donkey Kicks",
+        "Side Lying Hip Abbduction",
+        "Side Lying Hip Adduction",
+        "Bird Dogs"
+        ];
+
+        if (number > EXERCISES.length) {
+            number = EXERCISES.length;
+        }
+        for (var i = 0; i < number; i ++){
+            let index = Math.floor(Math.random()*EXERCISES.length);
+            document.getElementById("workoutlist").innerHTML = document.getElementById("workoutlist").innerHTML + EXERCISES.splice(index, 1)[0] + "\n";
+        }
+
     }
 </script>
 
