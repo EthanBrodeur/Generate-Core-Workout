@@ -62,9 +62,9 @@
         if (number > EXERCISES.length) {
             number = EXERCISES.length;
         }
-        for (var i = 1; i < number+1; i ++){
+        for (var i = 0; i < number; i ++){
             let index = Math.floor(Math.random()*EXERCISES.length);
-            document.getElementById("workoutList").innerHTML = document.getElementById("workoutList").innerHTML + i + ". " + EXERCISES.splice(index, 1)[0];
+            document.getElementById("workoutList").innerHTML = document.getElementById("workoutList").innerHTML + String((i+1)) + ". " + EXERCISES.splice(index, 1)[0] + "%0D%0A";
         }
 
     }
