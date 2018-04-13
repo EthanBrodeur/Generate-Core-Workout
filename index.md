@@ -11,7 +11,8 @@
 <script>
     function getWorkout(){
         let number = document.getElementById("numEx");
-        document.getElementById("returntxt").value = number 
+        document.getElementById("returntxt").value = number
+        alert(number) 
     }
 </script>
 
