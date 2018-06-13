@@ -86,7 +86,7 @@
 
         if (number > EXERCISES.length) {
             number = EXERCISES.length;
-            alert("You picked more exercises than we've got! We'll give you " + EXERCISES.length " exercises instead.");
+            alert("You picked more exercises than we've got! We'll give you " + EXERCISES.length + " exercises instead.");
         }
         for (var i = 0; i < number; i ++){
             var criteriaMet = false;
