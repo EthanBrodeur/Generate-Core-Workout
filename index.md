@@ -114,7 +114,7 @@
                 criteriaMet = true;
             }
 
-            document.getElementById("workoutList").innerHTML = document.getElementById("workoutList").innerHTML + String((i+1)) + ". " + EXERCISES.splice(index, 1)[0] + "<br>";
+            document.getElementById("workoutList").innerHTML = document.getElementById("workoutList").innerHTML + String((i+1)) + ". " + EXERCISES.splice(index, 1)[0][0] + "<br>";
         }
 
     }
