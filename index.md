@@ -93,20 +93,20 @@
             let index = 0;
             while (!(criteriaMet)) {
                 index = Math.floor(Math.random()*EXERCISES.length);
-                if (swiss) {
-                    if (!(EXERCISES[index].indexOf("swiss") > -1)) {
+                if (!swiss) {
+                    if (EXERCISES[index].indexOf("swiss") > -1) {
                         index = Math.floor(Math.random()*EXERCISES.length);
                         continue;
                     }
                 }
-                if (medball) {
-                    if (!(EXERCISES[index].indexOf("medball") > -1)) {
+                if (!medball) {
+                    if (EXERCISES[index].indexOf("medball") > -1) {
                         index = Math.floor(Math.random()*EXERCISES.length);
                         continue;
                     }
                 }
-                if (hips) {
-                    if (!(EXERCISES[index].indexOf("hips") > -1)) {
+                if (!hips) {
+                    if (EXERCISES[index].indexOf("hips") > -1) {
                         index = Math.floor(Math.random()*EXERCISES.length);
                         continue;
                     }
