@@ -41,7 +41,7 @@
         ["High Plank with Arm Extensions"],
         ["Elbow Plank with Arm Extensions"],
         ["High Plank with Opposite Arm/Leg Extensions"],
-        ["Elbow Plan with Opposite Arm/Leg Extensions"],
+        ["Elbow Plank with Opposite Arm/Leg Extensions"],
         ["Elbow Side Plank with Knee Drives"],
         ["High Side Plank with Knee Drives"],
         ["Elbow Side Plank with Top Leg Lifts"],
